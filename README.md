@@ -1,4 +1,4 @@
-# program-synthesis-hackathon
+# Program synthesis hackathon
 
 ##Logistics
 - One weekend or two sessions a week apart?
