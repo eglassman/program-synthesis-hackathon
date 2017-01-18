@@ -1,6 +1,6 @@
 # Hackathon
 
-[RSVP preferred](https://docs.google.com/a/berkeley.edu/forms/d/e/1FAIpQLSdx1imo0xfJAI-5nIu7_-JfjhVCQ26L0cnkbQcVnFOkcYJyMw/viewform)
+RSVP preferred [via Google Form](https://docs.google.com/a/berkeley.edu/forms/d/e/1FAIpQLSdx1imo0xfJAI-5nIu7_-JfjhVCQ26L0cnkbQcVnFOkcYJyMw/viewform)
 
 ## What is Programming by Example?
 
