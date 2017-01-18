@@ -29,7 +29,7 @@ These technologies include FlashFill, shipped in Microsoft Excel 2013, FlashExtr
 	- 4 - 5 PM: Prepare presentations
 	- 5 PM: Wrap-up, awards (including XBox give-away)
 
-## Pre-hackathon talk
+# Pre-hackathon talk
 
 On Friday we are going to have a guest, Alex Polozov, presenting some of his work on program synthesis at UW and Microsoft.
 
@@ -55,7 +55,7 @@ In 2015, our group moved from Microsoft Research to Microsoft Data Group, establ
 There, our unique position as developers of new synthesis APIs for various product teams allows us to collect new problems, insights, and lessons in program synthesis that arise only in end-user facing and industrially deployed applications.
 In this talk, I will (a) present the technical insight behind the synthesis algorithms in the PROSE framework, and (b) discuss some of these novel problems and lessons we have learned as we observe how end users interact with the PBE-based applications in the wild.
 
-## Organizers
+# Organizers
 
 - Bjoern Hartmann
 - Gustavo Soares
@@ -65,7 +65,7 @@ In this talk, I will (a) present the technical insight behind the synthesis algo
 
 For inquiries: eglassman@berkeley.edu, gsoares@berkeley.edu
 
-## Support
+# Support
 
 - [ExCAPE grant](https://excape.cis.upenn.edu/)
 - Microsoft
