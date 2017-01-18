@@ -59,7 +59,7 @@ In this talk, I will (a) present the technical insight behind the synthesis algo
 
 # Location
 
-Immersion Room Room - Swarm LAB
+Immersion Room Room - [SWARM LAB](https://swarmlab.eecs.berkeley.edu/contact)
 
 # Organizers
 
