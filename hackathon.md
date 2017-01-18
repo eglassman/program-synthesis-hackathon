@@ -62,7 +62,6 @@ In this talk, I will (a) present the technical insight behind the synthesis algo
 - Bjoern Hartmann
 - Gustavo Soares
 - Elena Glassman
-- Andrew Head
 - Alex Polozov
 
 For inquiries: eglassman@berkeley.edu, gsoares@berkeley.edu
