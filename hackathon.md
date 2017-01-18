@@ -1,6 +1,6 @@
 # Hackathon
 
-RSVP preferred: 
+[RSVP preferred](https://docs.google.com/a/berkeley.edu/forms/d/e/1FAIpQLSdx1imo0xfJAI-5nIu7_-JfjhVCQ26L0cnkbQcVnFOkcYJyMw/viewform)
 
 ## What is Programming by Example?
 
@@ -11,7 +11,7 @@ These technologies include FlashFill, shipped in Microsoft Excel 2013, FlashExtr
 ## Schedule
 
 - Friday
-	- 1 PM: Pre-hackathon talk on programming by example
+	- 1 PM: Pre-hackathon talk on programming by example (details below)
 - Saturday
 	- 10 AM - 1 PM: Programming by example tutorial
 	- 1 - 2 PM: Lunch 
