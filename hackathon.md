@@ -21,7 +21,8 @@ These technologies include FlashFill, shipped in Microsoft Excel 2013, FlashExtr
 	- 1 - 2 PM: Lunch 
 	- 2 - 3 PM: Project brainstorms (in pairs/groups)
 	- 3 - 4 PM: Design discussions (in pairs/groups)
-	- 4 - evening: Hack
+	- 4 - whenever: Hack (dinner arrives at 6:30 pm) 
+	
 #### Sunday
 	- 10 AM - 1 PM: Hack
 	- 1 - 2 PM: Lunch
