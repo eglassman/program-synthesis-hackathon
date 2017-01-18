@@ -1,15 +1,17 @@
-RSVP preferred [via Google Form](https://docs.google.com/a/berkeley.edu/forms/d/e/1FAIpQLSdx1imo0xfJAI-5nIu7_-JfjhVCQ26L0cnkbQcVnFOkcYJyMw/viewform)
+# Hackathon
 
-# What is Programming by Example?
+RSVP preferred: 
+
+## What is Programming by Example?
 
 Programming by example (PBE), or inductive synthesis, is a subfield of program synthesis where specification on a target program is provided in a form of input-output examples or, more generally, constraints on the output.
 In the last decade, it gained prominence thanks to the mass-market deployments of several PBE-based technologies for data wrangling — the widespread problem of cleaning raw datasets into a structured form, more amenable to analysis.
 These technologies include FlashFill, shipped in Microsoft Excel 2013, FlashExtract, shipped in PowerShell and Azure Log Analytics, and others.
 
-# Schedule
+## Schedule
 
 - Friday
-	- 1 PM: Pre-hackathon talk on programming by example (details below)
+	- 1 PM: Pre-hackathon talk on programming by example
 - Saturday
 	- 10 AM - 1 PM: Programming by example tutorial
 	- 1 - 2 PM: Lunch 
@@ -23,7 +25,7 @@ These technologies include FlashFill, shipped in Microsoft Excel 2013, FlashExtr
 	- 4 - 5 PM: Prepare presentations
 	- 5 PM: Wrap-up, Awards (including XBox give-away)
 
-## Pre-hackathon talk
+### Pre-hackathon talk
 
 On Friday we are going to have a guest, Alex Polozov, presenting some of his work on program synthesis at UW and Microsoft.
 
@@ -35,7 +37,7 @@ On Friday we are going to have a guest, Alex Polozov, presenting some of his wor
 
 **Location**: Cory Hall 400
 
-### Talk details
+#### Talk details
 
 Deployment of a mass-market industrial application of program synthesis is challenging.
 First, an efficient implementation requires non-trivial engineering insight, often overlooked in a research prototype.
@@ -49,7 +51,7 @@ In 2015, our group moved from Microsoft Research to Microsoft Data Group, establ
 There, our unique position as developers of new synthesis APIs for various product teams allows us to collect new problems, insights, and lessons in program synthesis that arise only in end-user facing and industrially deployed applications.
 In this talk, I will (a) present the technical insight behind the synthesis algorithms in the PROSE framework, and (b) discuss some of these novel problems and lessons we have learned as we observe how end users interact with the PBE-based applications in the wild.
 
-## Organizers
+### Organizers
 
 - Bjoern Hartmann
 - Gustavo Soares
@@ -59,7 +61,7 @@ In this talk, I will (a) present the technical insight behind the synthesis algo
 
 For inquiries: eglassman@berkeley.edu, gsoares@berkeley.edu
 
-## Support
+### Support
 
-- ExCAPE grant
+- [ExCAPE grant](https://excape.cis.upenn.edu/)
 - Microsoft
