@@ -14,15 +14,15 @@ These technologies include FlashFill, shipped in Microsoft Excel 2013, FlashExtr
 
 # Schedule
 
-- Friday
+#### Friday
 	- 1 PM: *(Optional but recommended)* Pre-hackathon talk on programming by example (details below)
-- Saturday
+#### Saturday
 	- 10 AM - 1 PM: Programming by example tutorial
 	- 1 - 2 PM: Lunch 
 	- 2 - 3 PM: Project brainstorms (in pairs/groups)
 	- 3 - 4 PM: Design discussions (in pairs/groups)
 	- 4 - evening: Hack
-- Sunday
+#### Sunday
 	- 10 AM - 1 PM: Hack
 	- 1 - 2 PM: Lunch
 	- 2 - 4 PM: Hack
