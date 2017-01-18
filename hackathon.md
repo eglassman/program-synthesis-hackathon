@@ -1,10 +1,18 @@
-# Hackathon Schedule
+# Hackathon
+
+## What is Programming by Example?
+
+Programming by example (PBE), or inductive synthesis, is a subfield of program synthesis where specification on a target program is provided in a form of input-output examples or, more generally, constraints on the output.
+In the last decade, it gained prominence thanks to the mass-market deployments of several PBE-based technologies for data wrangling — the widespread problem of cleaning raw datasets into a structured form, more amenable to analysis.
+These technologies include FlashFill, shipped in Microsoft Excel 2013, FlashExtract, shipped in PowerShell and Azure Log Analytics, and others.
+
+## Schedule
 
 - Friday
 	- 1 PM: Pre-hackathon talk on programming by example
 - Saturday
 	- 10 AM - 1 PM: Programming by example tutorial
-	- 1 - 2 PM: Pizza lunch 
+	- 1 - 2 PM: Lunch 
 	- 2 - 3 PM: Project brainstorms (in pairs/groups)
 	- 3 - 4 PM: Design discussions (in pairs/groups)
 	- 4 - evening: Hack
@@ -13,9 +21,9 @@
 	- 12 - 1 PM: Prepare presentations
 	- 1 - 2 PM: Wrap-up, Awards (including XBox give-away)
 
-# Pre-hackathon talk on programming by example
+### Pre-hackathon talk
 
-Next Friday we are going to have a guest, Alex Polozov, presenting some of his work on program synthesis at UW and Microsoft.
+On Friday we are going to have a guest, Alex Polozov, presenting some of his work on program synthesis at UW and Microsoft.
 
 **Time**: Friday Jan 20, 1 PM.
 
@@ -23,11 +31,9 @@ Next Friday we are going to have a guest, Alex Polozov, presenting some of his w
 
 **Speaker**: Alex Polozov, University of Washington / Microsoft.
 
-## Talk details
+**Location**: Cory Hall 400
 
-Programming by example (PBE), or inductive synthesis is a subfield of program synthesis where specification on a target program is provided in a form of input-output examples or, more generally, constraints on the output.
-In the last decade, it gained prominence thanks to the mass-market deployments of several PBE-based technologies for data wrangling — the widespread problem of cleaning raw datasets into a structured form, more amenable to analysis.
-These technologies include FlashFill, shipped in Microsoft Excel 2013, FlashExtract, shipped in PowerShell and Azure Log Analytics, and others.
+#### Talk details
 
 Deployment of a mass-market industrial application of program synthesis is challenging.
 First, an efficient implementation requires non-trivial engineering insight, often overlooked in a research prototype.
