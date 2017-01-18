@@ -1,7 +1,7 @@
 # TL;DR
 
 1. Learn how to create programs just by providing input-output examples!
-2. Win an XBox!
+2. Compete for an XBox!
 
 RSVP preferred [via Google Form](https://docs.google.com/a/berkeley.edu/forms/d/e/1FAIpQLSdx1imo0xfJAI-5nIu7_-JfjhVCQ26L0cnkbQcVnFOkcYJyMw/viewform)
 
@@ -22,7 +22,7 @@ These technologies include FlashFill, shipped in Microsoft Excel 2013, FlashExtr
 - 1 - 2 PM: Lunch 
 - 2 - 3 PM: Project brainstorms (in pairs/groups)
 - 3 - 4 PM: Design discussions (in pairs/groups)
-- 4 - evening: Hack
+- 4 - whenever: Hack (dinner arrives at 6:30 pm) 
 	
 #### Sunday
 - 10 AM - 1 PM: Hack
