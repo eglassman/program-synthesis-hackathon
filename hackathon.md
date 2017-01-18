@@ -1,5 +1,7 @@
 # Hackathon
 
+RSVP preferred: 
+
 ## What is Programming by Example?
 
 Programming by example (PBE), or inductive synthesis, is a subfield of program synthesis where specification on a target program is provided in a form of input-output examples or, more generally, constraints on the output.
@@ -17,9 +19,11 @@ These technologies include FlashFill, shipped in Microsoft Excel 2013, FlashExtr
 	- 3 - 4 PM: Design discussions (in pairs/groups)
 	- 4 - evening: Hack
 - Sunday
-	- 10 AM - 12 PM: Hack
-	- 12 - 1 PM: Prepare presentations
-	- 1 - 2 PM: Wrap-up, Awards (including XBox give-away)
+	- 10 AM - 1 PM: Hack
+	- 1 - 2 PM: Lunch
+	- 2 - 4 PM: Hack
+	- 4 - 5 PM: Prepare presentations
+	- 5 PM: Wrap-up, Awards (including XBox give-away)
 
 ### Pre-hackathon talk
 
@@ -46,3 +50,18 @@ Moreover, PROSE made development of domain-specific PBE applications scalable, a
 In 2015, our group moved from Microsoft Research to Microsoft Data Group, establishing the first R&D group in PBE-based data wrangling at the company.
 There, our unique position as developers of new synthesis APIs for various product teams allows us to collect new problems, insights, and lessons in program synthesis that arise only in end-user facing and industrially deployed applications.
 In this talk, I will (a) present the technical insight behind the synthesis algorithms in the PROSE framework, and (b) discuss some of these novel problems and lessons we have learned as we observe how end users interact with the PBE-based applications in the wild.
+
+### Organizers
+
+- Bjoern Hartmann
+- Gustavo Soares
+- Elena Glassman
+- Andrew Head
+- Alex Polozov
+
+For inquiries: eglassman@berkeley.edu, gsoares@berkeley.edu
+
+### Support
+
+- ExCAPE grant
+- Microsoft
