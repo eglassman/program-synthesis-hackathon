@@ -1,4 +1,19 @@
-# PROSE HACKATHON
+# Hackathon Schedule
+
+- Friday
+	- 1 PM: Pre-hackathon talk on programming by example
+- Saturday
+	- 10 AM - 1 PM: Programming by example tutorial
+	- 1 - 2 PM: Pizza lunch 
+	- 2 - 3 PM: Project brainstorms (in pairs/groups)
+	- 3 - 4 PM: Design discussions (in pairs/groups)
+	- 4 - evening: Hack
+- Sunday
+	- 10 AM - 12 PM: Hack
+	- 12 - 1 PM: Prepare presentations
+	- 1 - 2 PM: Wrap-up, Awards (including XBox give-away)
+
+# Pre-hackathon talk on programming by example
 
 Next Friday we are going to have a guest, Alex Polozov, presenting some of his work on program synthesis at UW and Microsoft.
 
