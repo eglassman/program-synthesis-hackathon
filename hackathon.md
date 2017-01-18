@@ -59,10 +59,10 @@ In this talk, I will (a) present the technical insight behind the synthesis algo
 
 # Organizers
 
-- Bjoern Hartmann
-- Gustavo Soares
-- Elena Glassman
-- Alex Polozov
+- [Bjoern Hartmann](https://people.eecs.berkeley.edu/~bjoern/)
+- [Gustavo Soares](https://people.eecs.berkeley.edu/~gustavoasoares)
+- [Elena Glassman](http://eglassman.github.io/)
+- [Alex Polozov](http://www.alexpolozov.com/)
 
 For inquiries: eglassman@berkeley.edu, gsoares@berkeley.edu
 
