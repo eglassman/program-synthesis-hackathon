@@ -57,6 +57,10 @@ In 2015, our group moved from Microsoft Research to Microsoft Data Group, establ
 There, our unique position as developers of new synthesis APIs for various product teams allows us to collect new problems, insights, and lessons in program synthesis that arise only in end-user facing and industrially deployed applications.
 In this talk, I will (a) present the technical insight behind the synthesis algorithms in the PROSE framework, and (b) discuss some of these novel problems and lessons we have learned as we observe how end users interact with the PBE-based applications in the wild.
 
+# Location
+
+Immersion Room Room - Swarm LAB
+
 # Organizers
 
 - [Bjoern Hartmann](https://people.eecs.berkeley.edu/~bjoern/)
