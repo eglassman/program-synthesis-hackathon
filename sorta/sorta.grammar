@@ -5,11 +5,14 @@ using sorta.Semantics;
 using sorta.Learning;
 using semantics sorta.Semantics.Semantics;
 using learners sorta.Learning.Learners;
+using sorta.Semantic.Order;
 
 language sorta;
 
 @complete feature double Score = RankingScore;
 
 // Your grammar rules here. For example:
-@start string P := x;
-@input string x;
+@start Tuple<string, string> Sorted := Invert(Cmp) | Cmp;
+Order Cmp := Length(x, c) | FirstIndexOf(x, c) | LastIndexOf(x, c) | CountOf(x, c);
+@input Tuple<string, string> x;
+char c;
