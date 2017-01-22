@@ -53,9 +53,14 @@ namespace sorta
             
             //---------------------------------------------------------------------------------
             var g = grammar;
+            // simple length comparisons
             Print(Learn(g, ex("aab", "bb", Order.Greater)));
             Print(Learn(g, ex("aab", "bb", Order.Less)));
             Print(Learn(g, ex("bb", "aab", Order.Greater)));
+            //
+            Print(Learn(g, ex("aab", "bb", Order.Less), ex("bb", "aab", Order.Greater)));
+            // cannot be solved by length alone
+            Print(Learn(g, ex("aab", "bb", Order.Greater), ex("bb", "aab", Order.Greater)));
             
 
 
@@ -66,12 +71,13 @@ namespace sorta
         }
 
         private static ProgramSet Learn(Grammar grammar, params Tuple<string, string, Order>[] examples) {
+            Console.WriteLine();
             var dd = new Dictionary<State,object>();
             foreach(var example in examples) {
                 var a = example.Item1;
                 var b = example.Item2;
                 var o = example.Item3;
-                Console.WriteLine(String.Format("\n{0} {2} {1}", a, b, o));
+                Console.WriteLine(String.Format("{0} {2} {1}", a, b, o));
                 var inp = new Tuple<string, string>(a, b);
                 Order output = o;
                 var input = State.Create(grammar.InputSymbol, inp);
