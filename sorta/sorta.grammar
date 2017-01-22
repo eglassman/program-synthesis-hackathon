@@ -9,10 +9,10 @@ using sorta.Semantic.Order;
 
 language sorta;
 
-@complete feature double Score = RankingScore;
+// @complete feature double Score = RankingScore;
 
 // Your grammar rules here. For example:
-@start Tuple<string, string> Sorted := Invert(Cmp) | Cmp;
-Order Cmp := Length(x, c) | FirstIndexOf(x, c) | LastIndexOf(x, c) | CountOf(x, c);
+@start Order Sorted := Invert(Cmp) | Cmp;
+Order Cmp := Length(x); // | FirstIndexOf(x, c) | LastIndexOf(x, c) | CountOf(x, c);
 @input Tuple<string, string> x;
 char c;

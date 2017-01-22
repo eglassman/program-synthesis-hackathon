@@ -27,8 +27,19 @@ namespace sorta
                 return;
             }
 
-            var grammar = parseResult.Value;            
-            Console.WriteLine(grammar.Name);
+            //---------------------------------------------------------------------------------
+            var grammar = parseResult.Value;
+            Console.WriteLine("sucessfuly loaded: " + grammar.Name);
+
+            //---------------------------------------------------------------------------------
+
+            ProgramNode p = ProgramNode.Parse("Length(x)", grammar, ASTSerializationFormat.HumanReadable);
+            var inp = new Tuple<string, string>("aaa", "aa");
+            State input = State.Create(grammar.InputSymbol, inp);
+            Console.WriteLine(p.Invoke(input));
+
+
+            
         }
     }
 }
