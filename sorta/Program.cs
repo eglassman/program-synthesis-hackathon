@@ -53,14 +53,15 @@ namespace sorta
             
             //---------------------------------------------------------------------------------
             var g = grammar;
+            var l = new sorta.Learning.Learners(g);
             // simple length comparisons
-            Print(Learn(g, ex("aab", "bb", Order.Greater)));
-            Print(Learn(g, ex("aab", "bb", Order.Less)));
-            Print(Learn(g, ex("bb", "aab", Order.Greater)));
+            Print(Learn(g,l, ex("aab", "bb", Order.Greater)));
+            Print(Learn(g,l, ex("aab", "bb", Order.Less)));
+            Print(Learn(g,l, ex("bb", "aab", Order.Greater)));
             //
-            Print(Learn(g, ex("aab", "bb", Order.Less), ex("bb", "aab", Order.Greater)));
+            Print(Learn(g,l, ex("aab", "bb", Order.Less), ex("bb", "aab", Order.Greater)));
             // cannot be solved by length alone
-            Print(Learn(g, ex("aab", "bb", Order.Greater), ex("bb", "aab", Order.Greater)));
+            Print(Learn(g,l, ex("aab", "bb", Order.Greater), ex("bb", "aab", Order.Greater)));
             
 
 
@@ -70,7 +71,7 @@ namespace sorta
             return new Tuple<string, string, Order>(a,b,o);
         }
 
-        private static ProgramSet Learn(Grammar grammar, params Tuple<string, string, Order>[] examples) {
+        private static ProgramSet Learn(Grammar grammar, DomainLearningLogic logic,  params Tuple<string, string, Order>[] examples) {
             Console.WriteLine();
             var dd = new Dictionary<State,object>();
             foreach(var example in examples) {
@@ -84,7 +85,14 @@ namespace sorta
                 dd[input] = output;
             }
             var spec = new ExampleSpec(dd);
-            var engine = new SynthesisEngine(grammar);
+            var engine = new SynthesisEngine(grammar, new SynthesisEngine.Config{
+                UseThreads = false,
+                Strategies = new ISynthesisStrategy[] {
+                    new EnumerativeSynthesis(),
+                    new DeductiveSynthesis(logic),
+                },
+                LogListener = new LogListener(),
+            });
             return engine.LearnGrammar(spec);
         }
 

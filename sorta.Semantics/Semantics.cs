@@ -16,8 +16,8 @@ namespace sorta.Semantics
             return cmp(inp.Item1.Length, inp.Item2.Length);
         }
 
-        public static Order FirstIndexOf(Tuple<string, string> inp, char c) {
-            return cmp(inp.Item1.IndexOf(c), inp.Item2.IndexOf(c));
+        public static Order FirstIndexOf(Tuple<string, string> inp, String s) {
+            return cmp(inp.Item1.IndexOf(s), inp.Item2.IndexOf(s));
         }
 
         public static Order Invert(Order order) {
