@@ -212,4 +212,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)/Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="../sorta.Semantics/sorta.Semantics.csproj">
+      <Project>{600FE72C-744A-4D82-B0BC-C0F310AB6155}</Project>
+      <Name>sorta.Semantics</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
