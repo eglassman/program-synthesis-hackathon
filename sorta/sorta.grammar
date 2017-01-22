@@ -1,0 +1,15 @@
+#reference 'file:sorta.Semantics.dll';
+#reference 'file:sorta.Learning.dll';
+using sorta;
+using sorta.Semantics;
+using sorta.Learning;
+using semantics sorta.Semantics.Semantics;
+using learners sorta.Learning.Learners;
+
+language sorta;
+
+@complete feature double Score = RankingScore;
+
+// Your grammar rules here. For example:
+@start string P := x;
+@input string x;
