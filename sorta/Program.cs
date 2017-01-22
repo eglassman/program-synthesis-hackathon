@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using Microsoft.ProgramSynthesis;
 using Microsoft.ProgramSynthesis.AST;
@@ -18,9 +19,15 @@ namespace sorta
         {
             
             var parseResult = DSLCompiler.ParseGrammarFromFile("sorta.grammar");
-            parseResult.TraceDiagnostics();
-            var grammar = parseResult.Value;
-            
+            foreach (var d in parseResult.Diagnostics) {
+                System.Console.WriteLine(d);
+            }
+            if(parseResult.Value == null) {
+                Console.WriteLine("Failed to load grammar (see errors above)");
+                return;
+            }
+
+            var grammar = parseResult.Value;            
             Console.WriteLine(grammar.Name);
         }
     }
