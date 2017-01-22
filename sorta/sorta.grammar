@@ -13,6 +13,6 @@ language sorta;
 
 // Your grammar rules here. For example:
 @start Order Sorted := Invert(Cmp) | Cmp;
-Order Cmp := Length(x) | FirstIndexOf(x, s); // | LastIndexOf(x, s) | CountOf(x, s);
+Order Cmp := Length(x) | FirstIndexOf(x, s) | LastIndexOf(x, s) | CountOf(x, s);
 @input Tuple<string, string> x;
 string s;
