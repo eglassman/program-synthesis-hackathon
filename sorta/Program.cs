@@ -64,7 +64,8 @@ namespace sorta
             Print(Learn(g,l, ex("aab", "bb", Order.Greater), ex("bb", "aab", Order.Greater)));
             
             // sort by first character
-            Print(Learn(g,l, ex("Neda Cerise", "Amit Willy", Order.Greater), ex("Oliver Mirele", "Amit Willy", Order.Greater)));
+            Print(Learn(g,l, ex("Neda Cerise", "Amit Willy", Order.Greater)));
+            Print(g, "Oliver Mirele", "Neda Cerise", Learn(g,l, ex("Neda Cerise", "Amit Willy", Order.Greater), ex("Oliver Mirele", "Amit Willy", Order.Greater)));
             Print(Learn(g,l, ex("Neda Cerise", "Amit Willy", Order.Greater), ex("Oliver Mirele", "Amit Willy", Order.Greater), ex("Oliver Mirele", "Neda Cerise", Order.Greater)));
             Print(Learn(g,l, ex("Neda Cerise", "Amit Willy", Order.Greater), ex("Oliver Mirele", "Amit Willy", Order.Greater), ex("Oliver Mirele", "Neda Cerise", Order.Less)));
 
@@ -116,6 +117,21 @@ namespace sorta
             } else {
                 foreach(var prog in progs.AllElements) {
                     Console.WriteLine(String.Format("* {0}", prog.PrintAST(ASTSerializationFormat.HumanReadable)));
+                }
+            } 
+        }
+
+        private static void Print(Grammar grammar, string a, string b, ProgramSet progs) {
+           if(progs.IsEmpty) {
+                Console.WriteLine("wasn't able to find any matching program");
+            } else {
+                foreach(var prog in progs.AllElements) {
+                    var inp = new Tuple<string, string>(a, b);
+                    State input = State.Create(grammar.InputSymbol, inp);
+                    var res = prog.Invoke(input);
+                    Console.WriteLine(String.Format("* {0}(\"{1}\", \"{2}\") => {3}",
+                        prog.PrintAST(ASTSerializationFormat.HumanReadable),
+                        a,b,res));
                 }
             } 
         }
