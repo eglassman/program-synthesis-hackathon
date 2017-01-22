@@ -64,8 +64,9 @@ namespace sorta
             Print(Learn(g,l, ex("aab", "bb", Order.Greater), ex("bb", "aab", Order.Greater)));
             
             // sort by first character
-            Print(Learn(g,l, ex("Neda Cerise ", "Amit Willy", Order.Greater), ex("Oliver Mirele", "Amit Willy", Order.Greater)));
-            Print(Learn(g,l, ex("Neda Cerise ", "Amit Willy", Order.Greater), ex("Oliver Mirele", "Amit Willy", Order.Greater)));
+            Print(Learn(g,l, ex("Neda Cerise", "Amit Willy", Order.Greater), ex("Oliver Mirele", "Amit Willy", Order.Greater)));
+            Print(Learn(g,l, ex("Neda Cerise", "Amit Willy", Order.Greater), ex("Oliver Mirele", "Amit Willy", Order.Greater), ex("Oliver Mirele", "Neda Cerise", Order.Greater)));
+            Print(Learn(g,l, ex("Neda Cerise", "Amit Willy", Order.Greater), ex("Oliver Mirele", "Amit Willy", Order.Greater), ex("Oliver Mirele", "Neda Cerise", Order.Less)));
 
         }
 
@@ -80,7 +81,18 @@ namespace sorta
                 var a = example.Item1;
                 var b = example.Item2;
                 var o = example.Item3;
-                Console.WriteLine(String.Format("{0} {2} {1}", a, b, o));
+                switch(o) {
+                case Order.Greater:
+                    Console.WriteLine(String.Format("\"{0}\", \"{1}\"", a, b));
+                    break;
+                case Order.Less:
+                    Console.WriteLine(String.Format("\"{1}\", \"{0}\"", a, b));
+                    break;
+                case Order.Equal:
+                    Console.WriteLine(String.Format("\"{0}\"\n\"{1}\"", a, b));
+                    break;
+
+                }
                 var inp = new Tuple<string, string>(a, b);
                 Order output = o;
                 var input = State.Create(grammar.InputSymbol, inp);

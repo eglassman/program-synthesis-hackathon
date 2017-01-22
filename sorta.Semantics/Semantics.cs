@@ -46,12 +46,12 @@ namespace sorta.Semantics
             if(words.Length > n) {
                 var word = words[n];
                 if (word.Length > 0) {
-                    return words[n][0];
+                    return -words[n][0];
                 } else {
-                    return -1;
+                    return 1;
                 }
             } else {
-                return -1;
+                return 1;
             }
         }
         public static Order FirstLetterOfWord(Tuple<string, string> inp, int i) {
