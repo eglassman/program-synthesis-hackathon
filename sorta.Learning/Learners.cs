@@ -1,9 +1,11 @@
 using System;
+using System.Text.RegularExpressions;
 using Microsoft.ProgramSynthesis;
 using Microsoft.ProgramSynthesis.Rules;
 using Microsoft.ProgramSynthesis.Learning;
 using Microsoft.ProgramSynthesis.Specifications;
 using System.Collections.Generic;
+using System.Linq;  
 using sorta.Semantics;
 
 namespace sorta.Learning
@@ -64,6 +66,25 @@ namespace sorta.Learning
         [WitnessFunction(nameof(Semantics.Semantics.CountOf), 1)]
 	    DisjunctiveExamplesSpec WitnessCountOf(GrammarRule rule, ExampleSpec spec){
                 return WitnessSearchCompareFun(Semantics.Semantics.CountOf, rule, spec); 
+        }
+
+        [WitnessFunction(nameof(Semantics.Semantics.FirstLetterOfWord), 1)]
+	    DisjunctiveExamplesSpec WitnessFirstLetterOfWord(GrammarRule rule, ExampleSpec spec){
+                var nExamples = new Dictionary<State, IEnumerable<object>>();
+                foreach(State st in spec.ProvidedInputs) {
+                    var input = (Tuple<string, string>) st[rule.Body[0]];
+                    var output = (Order) spec.Examples[st];
+                    var positions = new List<object>();
+                    var words1 = Regex.Split(input.Item1, @"\s+").Length;
+                    var words2 = Regex.Split(input.Item2, @"\s+").Length;
+                    foreach(var n in Enumerable.Range(0, Math.Max(words1, words2))) {
+                        if(Semantics.Semantics.FirstLetterOfWord(input, n) == output) {
+                            positions.Add(n);
+                        }
+                    }
+                    nExamples[st] = positions;
+                }
+                return DisjunctiveExamplesSpec.From(nExamples);
         }
     }
 }

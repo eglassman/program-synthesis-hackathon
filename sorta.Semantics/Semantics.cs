@@ -1,4 +1,6 @@
 using System;
+using System.Text.RegularExpressions;
+
 namespace sorta.Semantics
 {
     public enum Order { Equal, Less, Greater };
@@ -38,10 +40,29 @@ namespace sorta.Semantics
             return cmp(SubstringCount(inp.Item1, s) , SubstringCount(inp.Item2, s));
         }
 
+
+        private static int GetFirstLetterOfWord(string s, int n) {
+            var words = Regex.Split(s, @"\s+");
+            if(words.Length > n) {
+                var word = words[n];
+                if (word.Length > 0) {
+                    return words[n][0];
+                } else {
+                    return -1;
+                }
+            } else {
+                return -1;
+            }
+        }
+        public static Order FirstLetterOfWord(Tuple<string, string> inp, int i) {
+            return cmp(GetFirstLetterOfWord(inp.Item1, i) , GetFirstLetterOfWord(inp.Item2, i));
+        }
+
         public static Order Invert(Order order) {
             return (order == Order.Less)? Order.Greater :
                    (order == Order.Greater)? Order.Less : Order.Equal;
         }
+        
         
     }
 }

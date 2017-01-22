@@ -63,7 +63,9 @@ namespace sorta
             // cannot be solved by length alone
             Print(Learn(g,l, ex("aab", "bb", Order.Greater), ex("bb", "aab", Order.Greater)));
             
-
+            // sort by first character
+            Print(Learn(g,l, ex("Neda Cerise ", "Amit Willy", Order.Greater), ex("Oliver Mirele", "Amit Willy", Order.Greater)));
+            Print(Learn(g,l, ex("Neda Cerise ", "Amit Willy", Order.Greater), ex("Oliver Mirele", "Amit Willy", Order.Greater)));
 
         }
 
