@@ -9,7 +9,10 @@ using Microsoft.ProgramSynthesis.Learning;
 using Microsoft.ProgramSynthesis.Learning.Logging;
 using Microsoft.ProgramSynthesis.Learning.Strategies;
 using Microsoft.ProgramSynthesis.Specifications;
+using Microsoft.ProgramSynthesis.Utils;
+using Microsoft.ProgramSynthesis.VersionSpace;
 using sorta.Learning;
+using sorta.Semantics;
 
 namespace sorta
 {
@@ -29,7 +32,7 @@ namespace sorta
 
             //---------------------------------------------------------------------------------
             var grammar = parseResult.Value;
-            Console.WriteLine("sucessfuly loaded: " + grammar.Name);
+            Console.WriteLine("sucessfuly loaded: " + grammar.Name + "\n");
 
             //---------------------------------------------------------------------------------
             {
@@ -48,6 +51,45 @@ namespace sorta
             */
             }
             
+            //---------------------------------------------------------------------------------
+            var g = grammar;
+            Print(Learn(g, ex("aab", "bb", Order.Greater)));
+            Print(Learn(g, ex("aab", "bb", Order.Less)));
+            Print(Learn(g, ex("bb", "aab", Order.Greater)));
+            
+
+
+        }
+
+        private static Tuple<string, string, Order> ex(string a, string b, Order o) {
+            return new Tuple<string, string, Order>(a,b,o);
+        }
+
+        private static ProgramSet Learn(Grammar grammar, params Tuple<string, string, Order>[] examples) {
+            var dd = new Dictionary<State,object>();
+            foreach(var example in examples) {
+                var a = example.Item1;
+                var b = example.Item2;
+                var o = example.Item3;
+                Console.WriteLine(String.Format("\n{0} {2} {1}", a, b, o));
+                var inp = new Tuple<string, string>(a, b);
+                Order output = o;
+                var input = State.Create(grammar.InputSymbol, inp);
+                dd[input] = output;
+            }
+            var spec = new ExampleSpec(dd);
+            var engine = new SynthesisEngine(grammar);
+            return engine.LearnGrammar(spec);
+        }
+
+        private static void Print(ProgramSet progs) {
+           if(progs.IsEmpty) {
+                Console.WriteLine("wasn't able to find any matching program");
+            } else {
+                foreach(var prog in progs.AllElements) {
+                    Console.WriteLine(String.Format("* {0}", prog.PrintAST(ASTSerializationFormat.HumanReadable)));
+                }
+            } 
         }
     }
 }
