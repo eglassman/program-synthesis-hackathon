@@ -22,8 +22,18 @@ namespace sorta.Learning
             return chars;
         }
 
-        [WitnessFunction("FirstIndexOf", 1)]
-	    DisjunctiveExamplesSpec WitnessPositionPair(GrammarRule rule, ExampleSpec spec){
+        [WitnessFunction(nameof(Semantics.Semantics.Invert), 0)]
+        ExampleSpec WitnessInvert(GrammarRule rule, ExampleSpec spec) {
+            var nExamples = new Dictionary<State, object>();
+            foreach(State st in spec.ProvidedInputs) {
+                var output = (Order) spec.Examples[st];
+                nExamples[st] = Semantics.Semantics.Invert(output);
+            }
+            return new ExampleSpec(nExamples);
+        }
+
+        [WitnessFunction(nameof(Semantics.Semantics.FirstIndexOf), 1)]
+	    DisjunctiveExamplesSpec WitnessFirstIndexOf(GrammarRule rule, ExampleSpec spec){
                 var nExamples = new Dictionary<State, IEnumerable<object>>();
                 foreach(State st in spec.ProvidedInputs) {
                     var input = (Tuple<string, string>) st[rule.Body[0]];
