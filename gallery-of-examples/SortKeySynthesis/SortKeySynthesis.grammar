@@ -1,0 +1,20 @@
+#reference 'file:SortKeySynthesis.Semantics.dll';
+#reference 'file:SortKeySynthesis.Learning.dll';
+using SortKeySynthesis;
+using SortKeySynthesis.Semantics;
+using SortKeySynthesis.Learning;
+using semantics SortKeySynthesis.Semantics.Semantics;
+using learners SortKeySynthesis.Learning.Learners;
+using System.Collections.Generic;
+
+language SortKeySynthesis;
+
+@complete feature double Score = RankingScore;
+
+// Your grammar rules here. For example:
+@start string[] P := Sort(v, key);
+Comparator key := Length() | Count(s) | First(s) | Last(s);
+
+
+@input string[] v;
+string s;
