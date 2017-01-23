@@ -8,6 +8,6 @@
 
 ## Additional, Highlighted Resources
 
-- [Prose Homepage](https://microsoft.github.io/prose/)
+- [Prose Homepage](https://microsoft.github.io/prose/) **with installation instructions**
 	- [Standard PROSE concepts](https://microsoft.github.io/prose/documentation/prose/concepts/) lists built-in PROSE operators that can be used in your DSL (e.g. Pair, Map, Filter, …) along with usage instructions.
 	- [Step-by-step tutorial for creating domain-specific languages (DSLs) with PROSE](https://microsoft.github.io/prose/documentation/prose/tutorial/)
