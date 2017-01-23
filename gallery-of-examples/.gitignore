@@ -1,0 +1,6 @@
+# use nuget to populate
+packages/
+
+# build aritfacts
+bin/
+obj/

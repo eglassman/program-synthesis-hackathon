@@ -1,0 +1,19 @@
+#reference 'file:sorta.Semantics.dll';
+#reference 'file:sorta.Learning.dll';
+using sorta;
+using sorta.Semantics;
+using sorta.Learning;
+using semantics sorta.Semantics.Semantics;
+using learners sorta.Learning.Learners;
+using sorta.Semantic.Order;
+
+language sorta;
+
+// @complete feature double Score = RankingScore;
+
+// Your grammar rules here. For example:
+@start Order Sorted := Invert(Cmp) | Cmp;
+Order Cmp := Length(x) | FirstIndexOf(x, s) | LastIndexOf(x, s) | CountOf(x, s) | FirstLetterOfWord(x, i);
+@input Tuple<string, string> x;
+string s;
+int i;

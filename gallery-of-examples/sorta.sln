@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sorta", "sorta\sorta.csproj", "{EFBD1A76-0A93-4CE8-8579-A0E6C078E341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sorta.Semantics", "sorta.Semantics\sorta.Semantics.csproj", "{600FE72C-744A-4D82-B0BC-C0F310AB6155}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sorta.Learning", "sorta.Learning\sorta.Learning.csproj", "{313D3DED-2469-43D2-83E1-E9FE53C2625C}"
+EndProject
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|Any CPU = Debug|Any CPU
+        Release|Any CPU = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {EFBD1A76-0A93-4CE8-8579-A0E6C078E341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {EFBD1A76-0A93-4CE8-8579-A0E6C078E341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {EFBD1A76-0A93-4CE8-8579-A0E6C078E341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {EFBD1A76-0A93-4CE8-8579-A0E6C078E341}.Release|Any CPU.Build.0 = Release|Any CPU
+        {600FE72C-744A-4D82-B0BC-C0F310AB6155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {600FE72C-744A-4D82-B0BC-C0F310AB6155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {600FE72C-744A-4D82-B0BC-C0F310AB6155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {600FE72C-744A-4D82-B0BC-C0F310AB6155}.Release|Any CPU.Build.0 = Release|Any CPU
+        {313D3DED-2469-43D2-83E1-E9FE53C2625C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {313D3DED-2469-43D2-83E1-E9FE53C2625C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {313D3DED-2469-43D2-83E1-E9FE53C2625C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {313D3DED-2469-43D2-83E1-E9FE53C2625C}.Release|Any CPU.Build.0 = Release|Any CPU
+    EndGlobalSection
+EndGlobal
